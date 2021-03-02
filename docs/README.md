@@ -61,10 +61,8 @@ Skeleton based action recognition has difficulties such as limited expressive po
 
 ## Links
 
-( NOTE: EDIT THIS LINKS WITH YOUR REPO DETAILS )
-
-- [Project Repository](https://github.com/cepdnaclk/repository-name)
-- [Project Page](https://cepdnaclk.github.io/repository-name)
+- [Project Repository](https://github.com/cepdnaclk/sports-action-recognition)
+- [Project Page](https://cepdnaclk.github.io/sports-action-recognition)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
 
