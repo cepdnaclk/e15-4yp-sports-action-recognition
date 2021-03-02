@@ -9,7 +9,7 @@ title:
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
-# Objectively Measure Player Performance on Olympic  Weightlifting
+<h1 align="center">Objectively Measure Player Performance on Olympic  Weightlifting</h1>
 
 #### Team
 
@@ -61,8 +61,8 @@ Skeleton based action recognition has difficulties such as limited expressive po
 
 ## Links
 
-- [Project Repository](https://github.com/cepdnaclk/sports-action-recognition)
-- [Project Page](https://cepdnaclk.github.io/sports-action-recognition)
+- [Project Repository](https://github.com/cepdnaclk/e15-4yp-sports-action-recognition )
+- [Project Page](https://cepdnaclk.github.io/e15-4yp-sports-action-recognition )
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
 
