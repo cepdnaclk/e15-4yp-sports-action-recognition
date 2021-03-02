@@ -1,46 +1,38 @@
 {
-   "title":"This is the title of the project",
+   "title":"Objectively Measure Player Performance on Olympic Weightlifting",
    "team":[
       {
-         "name":"Team Member Name 1",
-         "email":"email@eng.pdn.ac.lk",
-         "eNumber":"E/yy/xxx",
-         "github_profile":"#",
-         "linkedin_profile":"#",
-         "researchgate_profile":"#"
+         "name":"Chamin Jayasooriya",
+         "email":"e15154@eng.pdn.ac.lk",
+         "eNumber":"E/15/154",
+         "github_profile":"https://github.com/chamin96",
+         "linkedin_profile":"https://www.linkedin.com/in/chamin-jayasooriya",
+         "researchgate_profile":"https://www.researchgate.net/profile/Chamin-Jayasooriya"
       },
       {
-         "name":"Team Member Name 2",
-         "email":"email@eng.pdn.ac.lk",
-         "eNumber":"E/yy/xxx",
-         "github_profile":"#",
-         "linkedin_profile":"#",
-         "researchgate_profile":"#"
-      },
-      {
-         "name":"Team Member Name 3",
-         "email":"email@eng.pdn.ac.lk",
-         "eNumber":"E/yy/xxx",
-         "github_profile":"#",
-         "linkedin_profile":"#",
-         "researchgate_profile":"#"
+         "name":"Anandi Karunaratne",
+         "email":"e15179@eng.pdn.ac.lk",
+         "eNumber":"E/15/179",
+         "github_profile":"https://github.com/AnandiKarunaratne",
+         "linkedin_profile":"https://www.linkedin.com/in/anandi-karunaratne/",
+         "researchgate_profile":"https://www.researchgate.net/profile/Anandi_Karunaratne"
       }
    ],
    "supervisors":[
       {
-         "name":"Dr. Supervisor 1",
-         "email":"email@eng.pdn.ac.lk",
-         "linkedin_profile":"",
-         "researchgate_profile":""
+         "name":"Dr. Rajitha Navarathna",
+         "email":"rajithae03@gmail.com",
+         "linkedin_profile":"https://www.linkedin.com/in/rajitha-navarathna-phd-36a0989",
+         "researchgate_profile":"https://www.researchgate.net/scientific-contributions/Rajitha-Navarathna-71094384"
       },
       {
-         "name":"Supervisor 2",
-         "email":"email@eng.pdn.ac.lk",
-         "linkedin_profile":"",
-         "researchgate_profile":""
+         "name":"Mr. Sampath Deegalla",
+         "email":"sampath@eng.pdn.ac.lk",
+         "linkedin_profile":"https://www.linkedin.com/in/dsdeegalla",
+         "researchgate_profile":"https://www.researchgate.net/profile/Sampath-Deegalla-2"
       }
    ],
-   "description":"This is a brief introduction of the project. You need to use plain text without any specific characters here",
+   "description":"This project introduces a novel method to measure the quality of the actions performed in Olympic weightlifting using human action recognition in videos.",
    "publications":[
       {
          "title":"Paper Title",
@@ -56,6 +48,10 @@
       }
    ],
    "tags":[
-      "Final Year Projects"
+      "Final Year Projects",
+      "Human Action Recognition",
+      "Computer Vision",
+      "Openpose",
+      "Action Quality Assessment"
    ]
 }
