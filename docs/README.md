@@ -9,7 +9,7 @@ title:
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
-<h1 align="center">Objectively Measure Player Performance on Olympic  Weightlifting</h1>
+<h1 align="center">Objectively Measure Player Performance<br>on Olympic  Weightlifting</h1>
 
 #### Team
 
