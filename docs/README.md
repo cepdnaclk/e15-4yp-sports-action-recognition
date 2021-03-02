@@ -3,7 +3,7 @@ layout: home
 permalink: index.html
 
 # Please update this with your repository name and title
-repository-name: eYY-4yp-project-template
+repository-name: eYY-4yp-sports-action-recognition
 title:
 ---
 
@@ -13,14 +13,13 @@ title:
 
 #### Team
 
-- eNumber, Name, [email](mailto:name@email.com)
-- eNumber, Name, [email](mailto:name@email.com)
-- eNumber, Name, [email](mailto:name@email.com)
+- E/15/154, Chamin Jayasooriya, [email](mailto:e15154@eng.pdn.ac.lk)
+- E/15/179, Anandi Karunaratne, [email](mailto:anandi.karunaratne@gmail.com )
 
 #### Supervisors
 
-- Name, [email](mailto:name@eng.pdn.ac.lk)
-- Name, [email](mailto:name@eng.pdn.ac.lk)
+- Dr. Rajitha Navarathna, [email](mailto:rajithae03@gmail.com)
+- Mr. Sampath Deegalla, [email](mailto:sampath@eng.pdn.ac.lk )
 
 #### Table of content
 
@@ -35,8 +34,22 @@ title:
 ---
 
 ## Abstract
+This project introduces a novel method to measure the quality of the actions performed in Olympic weightlifting using human action recognition in videos. Human action recognition is a well-studied problem in computer vision and on the other hand action quality assessment is researched and experimented comparatively low. This is due to the lack of datasets that can be used to assess the quality of actions. In this research, we introduce a method to assess player techniques in weightlifting by using skeleton-based human action recognition. Furthermore, we introduce a new video dataset for action recognition in weightlifting which is annotated to frame level. We intended to develop a viable automated scoring system through action recognition that would be beneficial in the sports industry. 
+
 
 ## Related works
+
+
+###  Action Quality Analysis in Weightlifting
+
+A very limited amount of work has been conducted on action quality analysis in weightlifting. Chatzitofis et al. (2013) has analyzed the biomechanics of human body and how it is applied to weightlifting. They have also extracted the data that is important to a weightlifting coach. These data includes the position, the angle, and the velocity of the weightlifting bar, the initial angle of the athlete’s knee, and the start time and the end time of the lift. For this, they have used a kinetic sensor to get depth data.
+
+### Skeleton based Action Classification
+Classifying Actions with a Skeleton based Approach has captured the attention excessively in the past years.
+
+Li et al. (2019) introduces a new module named, A-link inference module which is an encoder-decoder structure. It can capture richer dependencies that current models might miss since they only capture local physical dependencies among joints. A-link inference model captures two main dependencies. 1. Action links, which are action-specific dependencies; and 2. Structural links. Combining these two, actional-structural graph convolution networks (AS-GCN) is proposed. 
+
+Skeleton based action recognition has difficulties such as limited expressive power and generalization. Yan et al. (2018) addresses this problem by introducing a novel model of dynamic skeletons called Spatial-Temporal Graph Convolutional Networks (ST-GCN). This model is able to learn spatio-temporal patterns automatically and capable of generalization. This is validated on Kinetics and NTU-RGBD datasets.
 
 ## Methodology
 
