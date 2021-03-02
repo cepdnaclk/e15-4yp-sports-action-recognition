@@ -10,6 +10,7 @@ title:
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
 <h1 align="center">Objectively Measure Player Performance<br>on Olympic  Weightlifting</h1>
+<hr>
 
 #### Team
 
@@ -40,11 +41,11 @@ This project introduces a novel method to measure the quality of the actions per
 ## Related works
 
 
-###  Action Quality Analysis in Weightlifting
+#####  Action Quality Analysis in Weightlifting
 
 A very limited amount of work has been conducted on action quality analysis in weightlifting. Chatzitofis et al. (2013) has analyzed the biomechanics of human body and how it is applied to weightlifting. They have also extracted the data that is important to a weightlifting coach. These data includes the position, the angle, and the velocity of the weightlifting bar, the initial angle of the athlete’s knee, and the start time and the end time of the lift. For this, they have used a kinetic sensor to get depth data.
 
-### Skeleton based Action Classification
+##### Skeleton based Action Classification
 Classifying Actions with a Skeleton based Approach has captured the attention excessively in the past years.
 
 Li et al. (2019) introduces a new module named, A-link inference module which is an encoder-decoder structure. It can capture richer dependencies that current models might miss since they only capture local physical dependencies among joints. A-link inference model captures two main dependencies. 1. Action links, which are action-specific dependencies; and 2. Structural links. Combining these two, actional-structural graph convolution networks (AS-GCN) is proposed. 
@@ -53,7 +54,9 @@ Skeleton based action recognition has difficulties such as limited expressive po
 
 ## Methodology
 
-### Dataset
+
+
+##### Dataset
 
 Since there are no existing weightlifting datasets, we have created our own dataset consisting of weightlifting video clips.
 
@@ -73,7 +76,7 @@ For our dataset, videos were collected from the official Olympic YouTube channel
 
 By using these data we have assumed that their techniques are more accurate. Hence we have used them for deriving optimal values for initial knee angle, bar angle  which are used for our scoring model.
 
-### Approach
+##### Approach
 
 As we discussed earlier, we used the skeleton based approach to recognize the actions.
 
@@ -120,7 +123,7 @@ And the expected structure of the result is as follows.
 * Individual scores relevant to sub actions
 * Details of the score calculation (which and how features affected to score
 
-### Implementation
+##### Implementation
 
 We set up the environment on a high-performance server that has an Intel Xeon E5-1630 v3 CPU and an NVIDIA GK180GL [Tesla K40c] GPU  to train the action recognition model.
 
