@@ -1,0 +1,3 @@
+[submodule "Weightlifting-Pose-Estimation"]
+	path = Weightlifting-Pose-Estimation
+	url = https://github.com/chamin96/Weightlifting-Pose-Estimation.git
