@@ -138,6 +138,27 @@ With those required parameters calculated, the action quality assessment can be 
 
 ## Experiment Setup and Implementation
 
+For our final experiments and demonstrations, we used Openpose framework. In the first setup, Openpose is used to get the positions of the joints. Each person is tracked by calculating the Euclidean distance between the joints of two skeletons and matching two skeletons. Missing joints are filled using the joints' relative position in the previous frame. Noise was added to the joint positions to try to augment data. A window size of 0.5s (5 frames) was used to extract features. The features of Body velocity, Normalized joint positions, and joint velocities were extracted. Then PCA was applied to reduce the feature dimension to 80. After that, it was classified by DNN of 3 layers of 50x50x50.
+
+After that, recognized actions for each frame is used to evaluate player techniques. Python, OpenCV and other helper libraries can be used to achieve this. Once the action for each frame of the video is identified, we evaluated techniques according to those identified actions. For example, if it is the initial position then we do not want to evaluate the player's arms angles. In that position, we would rather need to know about knee angles. Therefore, we programmed our scoring algorithm in such a way where player's technique is evaluated relevant to the current action. As mentioned in the Algorithm, we estimated a score for the quality of the action. If the player performs actions accurately in pre-defined techniquewise, then the player will get a higher score. At the end of the video, the player will get an overall score which is the weighted average of the scores earned for each sub-action.
+
+#### Data manipulation and Testing
+
+The video datasets were manipulated mainly by FFMPEG tool and OpenCV framework. For the training purposes, videos were collected from YouTube and some of the data were already collected by previous authors. The video data is preprocessed by trimming the videos (removing unnecessary parts of the video that are irrelevant to the target action) by using FFMPEG.
+
+Then the trimmed videos were converted into sequences of images using OpenCV and other python libraries such as NumPy, itertools, simplejson, etc. After that, for skeleton detection, Openpose framework was used, which is the Tensorflow variant of the initial Openpose framework. As mentioned, the skeleton detection library is built upon Tensorflow. For drawing skeletons and bounding boxes around human figures, OpenCV and Matplotlib libraries were used.
+
+The Openpose framework provides two models for skeleton detection; CMU and Mobilenet-thin. CMU model detects skeletons more accurately but at a slower speed when it is compared to Mobilenet-thin. For our experiments, we used the CMU model. The image (preprocessed video frames) resolution is 656x368 pixels. (Higher the input images' resolution, higher the accuracy of the skeleton detection.)
+
+Then the features were extracted using Numpy and then the classification was done by MLPClassifier from Scikit-learn which is a neural network model. Then again the sequence of images was converted into the output video with labeled actions by OpenCV, Numpy, and other Python libraries.
+
+#### Pitfalls and workarounds
+Since we have been working on a CLI environment, getting video inputs and outputs to the local GUI cannot be done directly. Because of this, we could not test these frameworks using a webcam for live-action recognition. To overcome this issue, we have used Google cloud APIs (Drive API and YouTube Data API) and SSH, SCP protocols to manipulate data on the server.
+
+Further, the OpenPose framework does not perform well with the videos that include truncated and occluded human figures, rapid variations of camera angles, scale of the viewpoint and colour spectrum, brightness etc. Therefore to avoid erroneous results that would happen due to such reasons, we created our Weightlifting Dataset in which the video data does not have such properties.
+
+Since we do not estimate the angles of body joints in 3-dimensional space, the calculated angles may vary from the real values. But what we have done is using those angles to estimate a score which is a reasonable interpretation of the estimated angles. People can use that scores to evaluate players rather than raw angle values. To calculate the scores, we followed an experimental approach where we had to change parameters of the scoring algorithm many times to obtain an acceptable values for the scores.
+
 ## Results and Analysis
 
 ## Conclusion and Future Work
