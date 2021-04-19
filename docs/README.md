@@ -161,6 +161,40 @@ Since we do not estimate the angles of body joints in 3-dimensional space, the c
 
 ## Results and Analysis
 
+#### Action Recognition Results
+Results of the action recognition model are shown in below figure and table. We can see that the accuracy on test data is over 93\%. This is due to the video dataset we chose for this task, which contains favourable properties for our action recognition model. By choosing training data in which human body occlusion, truncation are very minimum and other properties such as uniform scale, uniform brightness/contrast distribution, the human skeleton detection accuracy must have been improved. The dataset contains single person video frames and the background clutter is almost none.
+<p align="center"><img src="img/cm.png" width="400px"></p>
+<p align="center"><img src="img/accuracyreport.png" width="400px"></p>
+
+#### Action Quality Assessment Results
+According to the algorithm we described in the above algorithm we assessed the whole lift and each sub-action. To get optimal values for comparison, we considered a video set of Olympic champions of the 2016 Olympics as the baseline data as shown in Table . Table  includes the player names with respect to the video sample number. Results obtained from those videos are shown in Figure .
+<p align="center"><img src="img/medalist16.png" width="350px"></p>
+<p align="center"><img src="img/optimalvals.png" width="430px"></p>
+
+
+#### Scoring Algorithm
+Using the values in Table  we updated our scoring algorithm, and we applied it to calculate the scores of our previous dataset.
+<p align="center"><img src="img/kasn.png" width="400px"></p>
+<p align="center"><img src="img/basn.png" width="400px"></p>
+
+In Figures  and  we can see how the score decreases with the deviation from the optimal value.
+
+The comparison of the scores of Olympic medalists' videos and our dataset is given in Figure and Figure.
+<p align="center"><img src="img/alloly.png" width="500px"></p>
+<p align="center"><img src="img/all.png" width="500px"></p>
+
+By analyzing the overall scores for the weightlifting videos, we can see that our scoring algorithm has assigned scores for players' actions as we expected with defined optimal values and weights for each sub-action. One can always re-configure the scoring algorithm values to determine what is best for their own evaluation. Here we have attempted to demonstrate the capability of our proposed method to evaluate players based on their action quality.
+
+As we have already mentioned, for a coach the velocity of lifting the bar of each player is important. We have used a graphical way to show the coach how the bar moves vertically, with respect to the frames in the video footage. (Figure )
+<p align="center"><img src="img/newplot (2).png" width="600px"></p>
+<p align="center"><img src="img/newplot (3).png" width="600px"></p>
+
+Figure  shows the differences between the bar movements of the snatch lift and the clean and jerk lift. 
+Figure  compares the bar movements of two different Olympic players. The idea here is for a coach to get a general idea about the player. Therefore we did not focus on converting the data into metric units. Sport-persons can compare the bar movement with other players or with their previous lifts to improve their lifts. Hence this can be used as an assistive tool for training.
+<p align="center"><img src="img/svscj.png" width="600px"></p>
+<p align="center"><img src="img/newplot (1).png" width="600px"></p>
+
+
 ## Conclusion and Future Work
 
 We have introduced a way to analyze the quality of a weightlifting player performance using just a video footage as the input. For this purpose we have identified the actions performed, extracted the required features for the relevant actions, and evaluated the quality of the action using those features. 
