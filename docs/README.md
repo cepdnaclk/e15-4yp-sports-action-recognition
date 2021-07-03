@@ -258,11 +258,6 @@ Figure 12 compares the bar movements of two different Olympic players. The idea 
 </figure>
 
 
-<video width="320" height="240" controls>
-  <source src="media/demo.avi" type="video/avi">
-  Your browser does not support the video tag.
-</video>
-
 
 ## Conclusion and Future Work
 
