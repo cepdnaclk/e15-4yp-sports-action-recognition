@@ -257,10 +257,12 @@ Figure 12 compares the bar movements of two different Olympic players. The idea 
   <figcaption><p align="center">Fig.12 - Comparison of bar movement - Snatch Men 94 kg and Snatch women 75 kg</p></figcaption>
 </figure>
 
-<video width="320" height="240" controls>
-  <source src="media/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<p align="center">
+   <video width="320" height="240" controls>
+      <source src="media/demo.avi" type="video/avi">
+      Your browser does not support the video tag.
+   </video>
+</p>
 
 
 ## Conclusion and Future Work
